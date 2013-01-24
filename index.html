@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Djangocms-admin-style : Adds pretty CSS styles for the django CMS admin interface." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Djangocms-admin-style</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/divio/djangocms-admin-style">View on GitHub</a>
+
+          <h1 id="project_title">Djangocms-admin-style</h1>
+          <h2 id="project_tagline">Adds pretty CSS styles for the django CMS admin interface.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/divio/djangocms-admin-style/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/divio/djangocms-admin-style/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1></h1>
+
+<h1>django CMS Admin Style</h1>
+
+<p>Adds pretty CSS styles for the django CMS admin interface.</p>
+
+<h1>Installation</h1>
+
+<ul>
+<li>add <code>'djangocms_admin_style'</code> to your INSTALLED_APPS just before <code>'django.contrib.admin'</code>
+</li>
+</ul><h1>Customization</h1>
+
+<p>The django CMS Admin Style overrides django admin's <code>base_site.html</code>, but you can still partially customize this page.
+Look at the source of <code>templates/admin/base_site.html</code> and override the templates that are included in various blocks.
+For example, you can add your own CSS in <code>templates/admin/extrastyle.html</code>.</p>
+
+<h1>Compiling CSS</h1>
+
+<ul>
+<li>Command line</li>
+</ul><p>::</p>
+
+<pre><code>sass --watch djangocms_admin_style/sass/:djangocms_admin_style/static/djangocms_admin_style/css/ --style compact
+</code></pre>
+
+<ul>
+<li>If you keep getting this <a href="http://stackoverflow.com/questions/8723475/compass-add-compact-to-css-files">http://stackoverflow.com/questions/8723475/compass-add-compact-to-css-files</a> try using something like ScoutApp.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Djangocms-admin-style maintained by <a href="https://github.com/divio">divio</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
