@@ -104,5 +104,5 @@ span.datetimeshortcuts a { color: $link-color; }
 	select { overflow: hidden; }
 }
 
-form select[multiple] { overflow: auto; width: 100%;  max-width: 240px; }
+form select[multiple] { overflow: auto; width: 100%;  max-width: 240px; min-height: 11em; }
 
