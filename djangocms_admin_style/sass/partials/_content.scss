@@ -63,8 +63,15 @@
 		h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0;
 			font-size: 13px; line-height: 16px; }
 		input { width: 382px; margin: -5px 0 2px 0; }
+
 	}
-	.selector-filter { border: none; }
+    .selector-available select[multiple]{
+        height: 14em!important;;
+    }
+    .selector-chosen select[multiple]{
+        height: 16.4em!important;
+    }
+	.selector-filter { border: none; height: 2.4em; }
 	.selector-filter label { display: none; }
 	select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
 		max-width: 382px;
